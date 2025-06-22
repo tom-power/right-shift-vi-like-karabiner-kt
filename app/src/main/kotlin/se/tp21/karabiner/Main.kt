@@ -1,15 +1,15 @@
 package se.tp21.karabiner
 
-import se.tp21.karabiner.utils.jsonEncoder
+import sh.kau.karabiner.jsonEncoder
 import java.io.File
 
 fun main() {
-    larks().forEach { (t, u) ->
-        val karabinerJson = jsonEncoder(u)
+    larks().forEach { (key, modifications) ->
+        val karabinerJson = jsonEncoder(modifications)
         try {
-            val outputFile = File("build/larks_$t.json")
+            val outputFile = File("build/larks_$key.json")
             outputFile.writeText(karabinerJson)
-            println("Successfully wrote larks_$t.json to ${outputFile.absolutePath}")
+            println("Successfully wrote larks_$key.json to ${outputFile.absolutePath}")
         } catch (e: Exception) {
             System.err.println("Error writing karabiner.json: ${e.message}")
             e.printStackTrace()
