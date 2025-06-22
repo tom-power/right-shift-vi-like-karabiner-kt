@@ -61,9 +61,7 @@ private fun rules() =
                             keyCode = KeyCode.Slash
                         )
                     )
-
                 )
-
             ).toTypedArray()
         )
     )

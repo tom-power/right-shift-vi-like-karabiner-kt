@@ -3,6 +3,7 @@ package se.tp21.karabiner
 import org.junit.jupiter.api.TestInstance
 import org.junit.jupiter.params.ParameterizedTest
 import org.junit.jupiter.params.provider.MethodSource
+import se.tp21.karabiner.larks.commandControl
 import se.tp21.karabiner.utils.jsonEncoder
 import sh.kau.karabiner.ComplexModifications
 
@@ -21,9 +22,15 @@ class LarksTest {
         )
     }
 
-    private fun larksKeys() = listOf("commandControl", "macToPc")
+    private fun larksKeys() =
+        listOf(
+            "commandControl",
+            "macToPc",
+            "navigation",
+            "noQuit",
+            "wrap",
+        )
 
 }
-
 
 private fun String.trimAll() = trimStart().trimEnd().trimIndent()
