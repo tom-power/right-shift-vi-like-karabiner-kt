@@ -3,9 +3,8 @@ package se.tp21.karabiner
 import org.junit.jupiter.api.TestInstance
 import org.junit.jupiter.params.ParameterizedTest
 import org.junit.jupiter.params.provider.MethodSource
-import se.tp21.karabiner.larks.commandControl
-import se.tp21.karabiner.utils.jsonEncoder
 import sh.kau.karabiner.ComplexModifications
+import sh.kau.karabiner.jsonEncoder
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 class LarksTest {
