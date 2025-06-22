@@ -5,9 +5,9 @@ import java.io.File
 
 fun main() {
     larks().forEach { (key, modifications) ->
-        val karabinerJson = jsonEncoder(modifications)
         try {
             val outputFile = File("build/larks_$key.json")
+            val karabinerJson = jsonEncoder(modifications)
             outputFile.writeText(karabinerJson)
             println("Successfully wrote larks_$key.json to ${outputFile.absolutePath}")
         } catch (e: Exception) {
