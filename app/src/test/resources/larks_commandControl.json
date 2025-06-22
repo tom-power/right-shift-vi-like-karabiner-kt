@@ -1,0 +1,60 @@
+{
+  "title": "larks command control",
+  "description": "for the terminal",
+  "rules": [
+    {
+      "description": "Control b (left_command+b to right_control+b)",
+      "manipulators": [{
+        "from": {
+          "key_code": "b",
+          "modifiers": {
+            "mandatory": ["left_command"]
+          }
+        },
+        "to": [{
+          "key_code": "b",
+          "modifiers": [
+            "right_control"
+          ]
+        }],
+        "type": "basic"
+      }]
+    },
+    {
+      "description": "Control u (left_command+u to right_control+u)",
+      "manipulators": [{
+        "from": {
+          "key_code": "u",
+          "modifiers": {
+            "mandatory": ["left_command"]
+          }
+        },
+        "to": [{
+          "key_code": "u",
+          "modifiers": [
+            "right_control"
+          ]
+        }],
+        "type": "basic"
+      }]
+    },
+    {
+      "description": "Control l (left_command+l to right_control+l)",
+      "manipulators": [{
+        "from": {
+          "key_code": "l",
+          "modifiers": {
+            "mandatory": ["left_command"]
+          }
+        },
+        "to": [{
+          "key_code": "l",
+          "modifiers": [
+            "right_control"
+          ]
+        }],
+        "type": "basic"
+      }]
+    }
+  ]
+}
