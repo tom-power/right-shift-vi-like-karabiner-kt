@@ -4,7 +4,7 @@ import org.junit.jupiter.api.TestInstance
 import org.junit.jupiter.params.ParameterizedTest
 import org.junit.jupiter.params.provider.MethodSource
 import sh.kau.karabiner.ComplexModifications
-import sh.kau.karabiner.jsonEncoder
+import sh.kau.karabiner.json
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 class LarksTest {
@@ -17,7 +17,7 @@ class LarksTest {
 
         kotlin.test.assertEquals(
             expected = javaClass.getResource("/larks_$key.json")!!.readText().trimAll(),
-            actual = jsonEncoder(larks[key]!!).trimAll(),
+            actual = json().encodeToString(larks[key]!!).trimAll(),
         )
     }
 
