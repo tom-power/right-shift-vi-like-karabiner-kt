@@ -1,4 +1,4 @@
-### larky [Karabiner elements](https://github.com/tekezo/Karabiner-Elements) bindings for MacOS.
+### build for [right-shift-vi-like-karabiner](https://github.com/tom-power/right-shift-vi-like-karabiner) using [karabiner-kt](https://github.com/tom-power/karabiner-kt)
 
 ```shell
 clone https://github.com/tom-power/right-shift-vi-like-karabiner-kt.git &&
