@@ -1,6 +1,6 @@
 package se.tp21.rightshiftvilike.karabiner
 
-val keyToFileName =
+internal val keyToFileName =
     mapOf(
         "rightShiftViLike" to "right_shift_vi_like"
     )

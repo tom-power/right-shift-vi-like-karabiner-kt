@@ -1,4 +1,4 @@
-package se.tp21.rightshiftvilike.karabiner.rightshiftvilike
+package se.tp21.rightshiftvilike.karabiner.modifications
 
 import sh.kau.karabiner.ComplexModifications
 import sh.kau.karabiner.FromModifiers
