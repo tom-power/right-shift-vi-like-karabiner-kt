@@ -5,6 +5,7 @@ import org.junit.jupiter.params.ParameterizedTest
 import org.junit.jupiter.params.provider.MethodSource
 import sh.kau.karabiner.ComplexModifications
 import sh.kau.karabiner.json
+import kotlin.test.assertEquals
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 class LarksTest {
@@ -15,12 +16,13 @@ class LarksTest {
     @MethodSource("larksKeys")
     fun `snippets rules are correct`(key: String) {
 
-        kotlin.test.assertEquals(
+        assertEquals(
             expected = javaClass.getResource("/larks_$key.json")!!.readText().trimAll(),
             actual = json().encodeToString(larks[key]!!).trimAll(),
         )
     }
 
+    @Suppress("unused")
     private fun larksKeys() =
         listOf(
             "commandControl",

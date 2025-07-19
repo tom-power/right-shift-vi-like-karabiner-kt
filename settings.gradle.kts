@@ -13,6 +13,7 @@ plugins {
 }
 
 rootProject.name = "larks-karabiner-kt"
+include("core")
 include("app")
 
 sourceControl {
