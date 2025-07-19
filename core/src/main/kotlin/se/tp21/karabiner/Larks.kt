@@ -1,6 +1,10 @@
 package se.tp21.karabiner
 
-import se.tp21.karabiner.larks.*
+import se.tp21.karabiner.larks.commandControl
+import se.tp21.karabiner.larks.macToPc
+import se.tp21.karabiner.larks.navigation
+import se.tp21.karabiner.larks.noQuit
+import se.tp21.karabiner.larks.wrap
 import sh.kau.karabiner.ComplexModifications
 
 fun larks(): Map<String, ComplexModifications> =
