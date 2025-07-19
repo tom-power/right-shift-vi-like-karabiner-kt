@@ -1,4 +1,4 @@
-package se.tp21.karabiner
+package se.tp21.rightshiftvilike.karabiner
 
 import org.junit.jupiter.api.TestInstance
 import org.junit.jupiter.params.ParameterizedTest

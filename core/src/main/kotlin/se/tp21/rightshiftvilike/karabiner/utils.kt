@@ -1,4 +1,4 @@
-package se.tp21.karabiner
+package se.tp21.rightshiftvilike.karabiner
 
 val keyToFileName =
     mapOf(

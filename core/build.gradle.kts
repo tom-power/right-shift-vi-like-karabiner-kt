@@ -10,8 +10,7 @@ plugins {
     alias(libs.plugins.kotlin.jvm)
     alias(libs.plugins.kotlin.serialization) // Apply the Kotlin serialization plugin
 
-    // Apply the application plugin to add support for building a CLI application in Java.
-    application
+    `java-library`
 }
 
 repositories {
@@ -23,7 +22,6 @@ dependencies {
     implementation(libs.bundles.pods4k)
     implementation(libs.kotlinx.serialization.json)
     implementation(libs.kotlin.reflect)
-    implementation("karabiner-kt:core:1.1.0")
 
     testImplementation(libs.bundles.testing)
     testRuntimeOnly(libs.runtime.junit.platform)
@@ -31,13 +29,25 @@ dependencies {
     testImplementation("org.junit.jupiter:junit-jupiter-params:5.10.2")
     testImplementation("org.junit.jupiter:junit-jupiter-api:5.10.2")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.10.2")
+}
 
-
+base {
+    archivesName = "right-shift-vi-like-karabiner-kt-core"
 }
 
 java {
     toolchain {
         languageVersion = JavaLanguageVersion.of(21)
+    }
+    withSourcesJar()
+}
+
+version = "0.1"
+
+tasks.withType<Jar> {
+    manifest {
+        attributes["Implementation-Title"] = "right-shift-vi-like-karabiner-kt-core"
+        attributes["Implementation-Version"] = project.version
     }
 }
 
