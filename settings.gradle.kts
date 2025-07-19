@@ -12,7 +12,7 @@ plugins {
     id("org.gradle.toolchains.foojay-resolver-convention") version "0.8.0"
 }
 
-rootProject.name = "larks-karabiner-kt"
+rootProject.name = "right-shift-vi-like-karabiner-kt"
 include("core")
 include("app")
 
