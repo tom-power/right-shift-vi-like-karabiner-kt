@@ -11,7 +11,7 @@ import kotlin.test.assertEquals
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 class RightShiftVilLikesTest {
 
-    private val rightShiftVilLikes: Map<String, ComplexModifications> = rightShiftViLikes()
+    private val rightShiftVilLikes: Map<String, ComplexModifications> = rightShiftViLikeModifications()
 
     @ParameterizedTest
     @MethodSource("keyToFileName")
@@ -30,3 +30,7 @@ class RightShiftVilLikesTest {
 
 private fun String.trimAll() = trimStart().trimEnd().trimIndent()
 
+private val keyToFileName =
+    mapOf(
+        "rightShiftViLike" to "right_shift_vi_like"
+    )
