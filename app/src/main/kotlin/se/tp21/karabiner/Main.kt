@@ -4,14 +4,16 @@ import sh.kau.karabiner.json
 import java.io.File
 
 fun main() {
-    larks().forEach { (key, modifications) ->
+    rightShiftViLikes().forEach { (key, modifications) ->
+        val fileName = keyToFileName[key]!!
         try {
-            val outputFile = File("build/larks_$key.json")
+
+            val outputFile = File("build/$fileName.json")
             val karabinerJson = json().encodeToString(modifications)
             outputFile.writeText(karabinerJson)
-            println("Successfully wrote larks_$key.json to ${outputFile.absolutePath}")
+            println("Successfully wrote $fileName.json to ${outputFile.absolutePath}")
         } catch (e: Exception) {
-            System.err.println("Error writing karabiner.json: ${e.message}")
+            System.err.println("Error writing $fileName.json: ${e.message}")
             e.printStackTrace()
         }
     }
