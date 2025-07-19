@@ -1,12 +1,12 @@
 ### larky [Karabiner elements](https://github.com/tekezo/Karabiner-Elements) bindings for MacOS.
 
 ```shell
-clone https://github.com/tom-power/larks-karabiner-kt.git &&
-cd larks-karabiner-kt &&
+clone https://github.com/tom-power/right-shift-vi-like-karabiner-kt.git &&
+cd right-shift-vi-like-karabiner-kt &&
 ./gradlew build &&
 cp ./app/build/*.json ~/.config/karabiner/assets/complex_modifications/
 ```
 
 The rules will need to be loaded in the Karabiner elements UI:
 
-```"Preferences" -> "Complex Modifications" -> "Add rule" -> "larks ..." -> "Enable all"```
+```"Preferences" -> "Complex Modifications" -> "Add rule" -> "right-shift-vi-like ..." -> "Enable all"```
