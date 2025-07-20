@@ -23,7 +23,7 @@ fun rightShiftViLikeExtrasTerminal(): ComplexModifications =
                     )
                     toKey = KeyCode.LeftArrow
                     toModifiers = listOf(RightCommand)
-                    forApp {
+                    unlessApp {
                         bundleIds =
                             listOf(
                                 "^com\\.jetbrains\\.intellij$",
@@ -69,7 +69,7 @@ fun rightShiftViLikeExtrasTerminal(): ComplexModifications =
                     )
                     toKey = KeyCode.RightArrow
                     toModifiers = listOf(RightCommand)
-                    forApp {
+                    unlessApp {
                         bundleIds =
                             listOf(
                                 "^com\\.jetbrains\\.intellij$",

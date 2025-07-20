@@ -27,7 +27,7 @@
                     ],
                     "conditions": [
                         {
-                            "type": "frontmost_application_if",
+                            "type": "frontmost_application_unless",
                             "bundle_identifiers": [
                                 "^com\\.jetbrains\\.intellij$",
                                 "^com\\.jetbrains\\.intellij\\.ce$",
@@ -107,7 +107,7 @@
                     ],
                     "conditions": [
                         {
-                            "type": "frontmost_application_if",
+                            "type": "frontmost_application_unless",
                             "bundle_identifiers": [
                                 "^com\\.jetbrains\\.intellij$",
                                 "^com\\.jetbrains\\.intellij\\.ce$",
