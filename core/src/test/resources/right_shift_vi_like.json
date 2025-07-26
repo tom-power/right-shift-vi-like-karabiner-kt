@@ -98,7 +98,7 @@
             ]
         },
         {
-            "description": "End (right_shift+e to fn+right)",
+            "description": "End (right_shift+e to left_command+right)",
             "manipulators": [
                 {
                     "type": "basic",
@@ -117,7 +117,7 @@
                         {
                             "key_code": "right_arrow",
                             "modifiers": [
-                                "fn"
+                                "left_command"
                             ]
                         }
                     ]
@@ -125,7 +125,7 @@
             ]
         },
         {
-            "description": "Home (right_shift+a to fn+left)",
+            "description": "Home (right_shift+a to left_command+left)",
             "manipulators": [
                 {
                     "type": "basic",
@@ -144,7 +144,7 @@
                         {
                             "key_code": "left_arrow",
                             "modifiers": [
-                                "fn"
+                                "left_command"
                             ]
                         }
                     ]

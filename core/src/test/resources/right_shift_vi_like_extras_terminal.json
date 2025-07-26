@@ -2,46 +2,6 @@
     "title": "right shift vi like extras terminal",
     "rules": [
         {
-            "description": "Home not terminal (right_shift+a to right_command+left_arrow)",
-            "manipulators": [
-                {
-                    "type": "basic",
-                    "from": {
-                        "key_code": "a",
-                        "modifiers": {
-                            "optional": [
-                                "any"
-                            ],
-                            "mandatory": [
-                                "right_shift"
-                            ]
-                        }
-                    },
-                    "to": [
-                        {
-                            "key_code": "left_arrow",
-                            "modifiers": [
-                                "right_command"
-                            ]
-                        }
-                    ],
-                    "conditions": [
-                        {
-                            "type": "frontmost_application_unless",
-                            "bundle_identifiers": [
-                                "^com\\.jetbrains\\.intellij$",
-                                "^com\\.jetbrains\\.intellij\\.ce$",
-                                "^com\\.jetbrains\\.intellij-EAP$",
-                                "^com\\.googlecode\\.iterm2$",
-                                "^com\\.microsoft\\.VSCode$",
-                                "^com\\.jetbrains\\.pycharm\\.ce$"
-                            ]
-                        }
-                    ]
-                }
-            ]
-        },
-        {
             "description": "Home terminal (right_shift+a to fn+left_arrow)",
             "manipulators": [
                 {
@@ -68,46 +28,6 @@
                     "conditions": [
                         {
                             "type": "frontmost_application_if",
-                            "bundle_identifiers": [
-                                "^com\\.jetbrains\\.intellij$",
-                                "^com\\.jetbrains\\.intellij\\.ce$",
-                                "^com\\.jetbrains\\.intellij-EAP$",
-                                "^com\\.googlecode\\.iterm2$",
-                                "^com\\.microsoft\\.VSCode$",
-                                "^com\\.jetbrains\\.pycharm\\.ce$"
-                            ]
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "description": "End not terminal (right_shift+e to right_command+right_arrow)",
-            "manipulators": [
-                {
-                    "type": "basic",
-                    "from": {
-                        "key_code": "e",
-                        "modifiers": {
-                            "optional": [
-                                "any"
-                            ],
-                            "mandatory": [
-                                "right_shift"
-                            ]
-                        }
-                    },
-                    "to": [
-                        {
-                            "key_code": "right_arrow",
-                            "modifiers": [
-                                "right_command"
-                            ]
-                        }
-                    ],
-                    "conditions": [
-                        {
-                            "type": "frontmost_application_unless",
                             "bundle_identifiers": [
                                 "^com\\.jetbrains\\.intellij$",
                                 "^com\\.jetbrains\\.intellij\\.ce$",
