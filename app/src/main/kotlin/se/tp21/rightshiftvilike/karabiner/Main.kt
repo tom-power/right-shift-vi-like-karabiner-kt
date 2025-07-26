@@ -4,7 +4,7 @@ import sh.kau.karabiner.json
 import java.io.File
 
 fun main() {
-    rightShiftViLikeModificationsMap().forEach { (key, modifications) ->
+    rightShiftViLikesMap.forEach { (key, modifications) ->
         val fileName = keyToFileName[key]!!
         try {
 

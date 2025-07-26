@@ -7,7 +7,7 @@ import se.tp21.rightshiftvilike.karabiner.modifications.rightShiftViLikeExtrasSy
 import se.tp21.rightshiftvilike.karabiner.modifications.rightShiftViLikeExtrasTerminal
 import sh.kau.karabiner.ComplexModifications
 
-fun rightShiftViLikeModificationsMap(): Map<String, ComplexModifications> =
+val rightShiftViLikesMap: Map<String, ComplexModifications> =
     mapOf(
         "rightShiftViLike" to rightShiftViLike(),
         "rightShiftViLikeExtrasEditing" to rightShiftViLikeExtrasEditing(),
