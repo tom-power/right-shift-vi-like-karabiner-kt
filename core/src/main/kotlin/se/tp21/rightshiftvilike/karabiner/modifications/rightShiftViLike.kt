@@ -5,7 +5,6 @@ import sh.kau.karabiner.FromModifiers
 
 import sh.kau.karabiner.KeyCode
 import sh.kau.karabiner.ModifierKeyCode
-import sh.kau.karabiner.ModifierKeyCode.Fn
 import sh.kau.karabiner.ModifierKeyCode.LeftCommand
 import sh.kau.karabiner.ModifierKeyCode.LeftOption
 import sh.kau.karabiner.ModifierKeyCode.LeftShift
@@ -50,21 +49,21 @@ fun rightShiftViLike(): ComplexModifications =
                 }
             },
             karabinerRule {
-                description = "End (right_shift+e to fn+right)"
+                description = "End (right_shift+e to left_command+right)"
                 mapping {
                     fromKey = KeyCode.E
                     fromModifiers = FromModifiers(mandatory = listOf(RightShift), optional = listOf(ModifierKeyCode.Any))
                     toKey = KeyCode.RightArrow
-                    toModifiers = listOf(Fn)
+                    toModifiers = listOf(LeftCommand)
                 }
             },
             karabinerRule {
-                description = "Home (right_shift+a to fn+left)"
+                description = "Home (right_shift+a to left_command+left)"
                 mapping {
                     fromKey = KeyCode.A
                     fromModifiers = FromModifiers(mandatory = listOf(RightShift), optional = listOf(ModifierKeyCode.Any))
                     toKey = KeyCode.LeftArrow
-                    toModifiers = listOf(Fn)
+                    toModifiers = listOf(LeftCommand)
                 }
             },
             karabinerRule {
