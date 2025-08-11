@@ -5,7 +5,7 @@ import java.io.File
 
 fun main() {
     rightShiftViLikesMap.forEach { (key, modifications) ->
-        val fileName = keyToFileName[key]!!
+        val fileName = key.camelToSnakeCase()
         try {
 
             val outputFile = File("build/$fileName.json")
