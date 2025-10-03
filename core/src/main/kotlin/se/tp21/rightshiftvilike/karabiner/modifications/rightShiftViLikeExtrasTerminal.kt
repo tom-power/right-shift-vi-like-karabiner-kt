@@ -30,7 +30,7 @@ fun rightShiftViLikeExtrasTerminal(): ComplexModifications =
                                 "^com\\.jetbrains\\.intellij-EAP$",
                                 "^com\\.googlecode\\.iterm2$",
                                 "^com\\.microsoft\\.VSCode$",
-                                "^com\\.jetbrains\\.pycharm\\.ce$"
+                                "^com\\.jetbrains\\.pycharm$"
                             )
                     }
                 }
@@ -53,7 +53,7 @@ fun rightShiftViLikeExtrasTerminal(): ComplexModifications =
                                 "^com\\.jetbrains\\.intellij-EAP$",
                                 "^com\\.googlecode\\.iterm2$",
                                 "^com\\.microsoft\\.VSCode$",
-                                "^com\\.jetbrains\\.pycharm\\.ce$"
+                                "^com\\.jetbrains\\.pycharm$"
                             )
                     }
                 }

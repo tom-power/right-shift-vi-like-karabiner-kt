@@ -34,7 +34,7 @@
                                 "^com\\.jetbrains\\.intellij-EAP$",
                                 "^com\\.googlecode\\.iterm2$",
                                 "^com\\.microsoft\\.VSCode$",
-                                "^com\\.jetbrains\\.pycharm\\.ce$"
+                                "^com\\.jetbrains\\.pycharm$"
                             ]
                         }
                     ]
@@ -74,7 +74,7 @@
                                 "^com\\.jetbrains\\.intellij-EAP$",
                                 "^com\\.googlecode\\.iterm2$",
                                 "^com\\.microsoft\\.VSCode$",
-                                "^com\\.jetbrains\\.pycharm\\.ce$"
+                                "^com\\.jetbrains\\.pycharm$"
                             ]
                         }
                     ]
